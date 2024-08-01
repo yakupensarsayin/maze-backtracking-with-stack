@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(maze_backtracking_with_stack main.cpp
         include/Coordinate.h
-        src/Coordinate.cpp)
+        src/Coordinate.cpp
+        src/MapData.cpp
+        include/MapData.h)
 
 IF (WIN32)
     target_link_libraries(maze_backtracking_with_stack -static)
